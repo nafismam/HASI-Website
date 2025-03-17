@@ -1,0 +1,298 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #fde0ca;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #FFFDF2;
+    /* to understand size */
+    border: solid black 1px;
+    border-radius: 0 0 20px 20px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+.logo {
+    height: 70px;
+}
+.navigation a {
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.navigation a:hover{
+    color: lightcoral;
+    text-decoration: underline;
+}
+
+.contact-btn {
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.contact-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Hero Section */
+
+.hero {
+    height: 50vh;
+    font-family: "Big Shoulders Display", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align the content */
+    background-color: #000000;
+    overflow: hidden; /* Prevent content from overlapping */
+}
+
+.hero-left, .hero-right {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center the image in the container */
+    align-items: center;
+}
+
+.hero-left img, .hero-right img {
+    width: 90%; /* Ensure both images take the same width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Fit the image within the container */
+    
+}
+
+.hero-right img{
+    clip-path: inset(21% 0% 21% 0%); /* Crops from top, right, bottom, left */
+    /* border-radius: 10px; */
+}
+
+
+.heading-hasi{
+    display: flex;
+
+}
+
+.hasi-motto{
+    font-family: "Big Shoulders Display", sans-serif;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.hasi-motto-content h1{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.hasi-motto-content h2{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.hasi-motto-content h1:hover{
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+
+/* Content Section */
+.content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    /* background-color: #FFFDF2; */
+}
+
+.content h2:hover{
+    text-decoration: underline;
+    color: goldenrod;
+}
+
+.content article {
+    margin-bottom: 2rem;
+}
+.content h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+.content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: black;
+    line-height: 1.8;
+}
+
+#background{
+    background-color: #e8dff5;
+    padding: 50px;
+}
+
+#vision{
+    background-color: #fce1e4;
+    padding: 50px;
+}
+
+#mission{
+    background-color: #fcf4dd;
+    padding: 50px;
+}
+
+#goal{
+    background-color: #ddedea;
+    padding: 50px;
+}
+
+#beneficiaries{
+    background-color: #daeaf6;
+    padding: 50px;
+}
+
+
+
+.donors-section {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #020202;
+}
+
+.donors-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    /* font-family: 'Roboto', sans-serif; */
+    color: #ffffff;
+}
+
+.donors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.donors-grid a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    color: #0b0b0b;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.donors-grid a:hover {
+    background-color: lightsteelblue;
+    color: goldenrod;
+    border-color: goldenrod;
+}
+
+/* FOOTER */
+
+.footer {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+}
+
+.footer-left,
+.footer-right {
+    width: 45%;
+}
+
+
+.footer-left h3,
+.footer-right h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #f0db4f;
+}
+
+
+.footer-left .social-links a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+
+.footer-left .social-links a:hover {
+    color: #f0db4f;
+}
+
+.map-container iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navigation {
+        margin-top: 1rem;
+    }
+    .navigation a {
+        margin: 0.5rem 0;
+    }
+    .contact-btn {
+        margin-top: 1rem;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+}
